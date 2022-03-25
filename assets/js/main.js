@@ -1,4 +1,5 @@
 const btn = document.getElementById("generate");
+
 btn.addEventListener("click", function() {
 console.log("click");
 
@@ -41,6 +42,8 @@ else if (age === "Over65") {
 
     discount_over65 = full_price * 0.20;
     price_over65 = full_price - discount_over65;
+    price_fixed = price_over65.toFixed(2);
+
     console.log(price_fixed);
     
 }
@@ -52,6 +55,37 @@ else {
     console.log(price_fixed);
 }
 
+
+//stampa biglietto
+
+const train_numb = Math.floor(Math.random()*10);
+document.getElementById("carrozza").innerHTML = train_numb;
+
+const code = Math.floor(Math.random() *100000) + 10000;
+document.getElementById("codice").innerHTML = code;
+
+let discount_age;
+
+//stampa prezzo biglietto in base a fasce di età
+
+if (age === "Over65") {
+    discount_age = "Sconto over65";
+
+}
+
+else if (age === "Minorenne") {
+    discount_age = "Sconto minorenne";
+}
+
+else {
+    discount_age = "prezzo intero";
+}
+
+document.getElementById("offerta").innerHTML = discount_age;
+
+document.getElementById("nome_passeggero").innerHTML = full_name;
+
+document.getElementById("prezzo").innerHTML = price_fixed;
 
 
 });
