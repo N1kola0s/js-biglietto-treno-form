@@ -1,6 +1,6 @@
 //chiedere all'utente il nome completo
 
-const full_name= prompt("Quale è il tuo nome? es.[nome cognome");
+const full_name= prompt("Quale è il tuo nome? es.[Nome Cognome]");
 console.log(full_name);
 
 
@@ -69,7 +69,6 @@ else {
 
 document.getElementById("costo_biglietto").innerHTML = `${price_fixed} €`
 
-const div = document.querySelector("nome_cognome").value = ${full_name};
 
 
 
