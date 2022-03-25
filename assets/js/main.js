@@ -1,11 +1,56 @@
-const btn = document.getElementById("genera");
+const btn = document.getElementById("generate");
 btn.addEventListener("click", function() {
 console.log("click");
 
 
-const full_name = document.querySelector("full_name");
-const way = document.querySelector ("way");
-const age= document.querySelector ("age_range");
+const full_name = document.querySelector(".full_name").value;
+console.log(full_name);
+
+const way = document.querySelector (".way").value;
+console.log(way);
+
+const age = document.querySelector (".age_range").value;
+console.log(age);
+
+//calcolo prezzo intero, ridotto in base alle fasce di età dell'utente. Ridotto per under18 con sconto 20% e over65 con sconto del 40%.
+
+const price_one_km = 0.21;
+const full_price = way * price_one_km ;
+
+let discount_under18;
+let price_under18;
+let price_fixed;
+
+let discount_over65;
+let price_over65;
+
+
+if (age === "Minorenne") {
+    /* il prezzo del biglietto con lo sconto per gli under18 */
+
+    discount_under18 = full_price * 0.20;
+    price_under18 = full_price - discount_under18;
+    price_fixed = price_under18.toFixed(2);
+    console.log(price_fixed);
+
+}
+
+
+else if (age === "Over65") {
+    /* il prezzo del biglietto con lo sconto per gli over65 */
+
+    discount_over65 = full_price * 0.20;
+    price_over65 = full_price - discount_over65;
+    console.log(price_fixed);
+    
+}
+
+
+else {
+    /* il prezzo del biglietto intero */
+    price_fixed = full_price.toFixed(2);
+    console.log(price_fixed);
+}
 
 
 
