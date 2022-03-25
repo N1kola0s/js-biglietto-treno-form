@@ -12,7 +12,7 @@ console.log(full_name);
 const way = document.querySelector (".way").value;
 console.log(way);
 
-const age = document.querySelector (".age_range").value;
+const age = document.querySelector (".range").value;
 console.log(age);
 
 //calcolo del prezzo intero, ridotto in base alle fasce di età dell'utente. Ridotto per under18 con sconto 20% e over65 con sconto del 40%.
@@ -83,7 +83,7 @@ else if (age === "Minorenne") {
 }
 
 else {
-    discount_age = "prezzo intero";
+    discount_age = "Prezzo Intero";
 }
 
 document.getElementById("offerta").innerHTML = discount_age;

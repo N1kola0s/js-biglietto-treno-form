@@ -22,113 +22,162 @@
 
     <section class="top">
 
-        <h1>CALCOLA IL PREZZO DEL TUO BIGLIETTO</h1>
+        <h1 class="text-center text-white py-3">CALCOLA IL PREZZO DEL TUO BIGLIETTO</h1>
 
-        <div class="container d-flex justify-content-center my-4">
+        <div class="container d-flex justify-content-center my-4 py-5">
 
             <form>
-                <span class="mb-3">
-                  <label for="user_name" class="form-label">Nome Cognome</label>
-                  <input type="text" class="full_name" >
-                </span>
-        
-                <span class="mb-3">
-                    <label for="user_km" class="form-label">Km da percorrere</label>
-                    <input type="text" class="way" >
-                </span>
-        
-                <select class="select age_range mb-3">
-        
-                    <option class="under18">
-                        Minorenne
-                    </option>
 
-                    <option class="over18">
-                        Maggiorenne
-                    </option>
+                <div class="row">
 
-                    <option class="over65">
-                        Over65
-                    </option>
+                    <div class="col">
+                        <div class="mb-3 text-center">
+                            <label for="" class="form-label">
+                                Nome Cognome
+                            </label>
+                            
+                            <input type="text" class="full_name text-center p-1" >
+                        </div>
+                        <!-- /user_name -->
+
+                    </div>
+                    <!-- /.col -->
+
+                    <div class="col">
+                        <div class="user_km mb-3 text-center ">
+
+                            <label for="" class="form-label">
+                                Km da percorrere
+                            </label>
+
+                            <input type="text" class="way text.center p-1" >
+                        </div>
+                        <!-- /.user_km -->
+                        
+                    </div>
+                    <!-- /.col -->
+
+
+                    <div class="col">
+
+                        <div class="user_age mb-3 text-center ">
+
+                            <label for="" class="form-label d-block">
+                                Fascia d'età
+                            </label>
+
+                            
+
+                            <select class="range mb-3 p-1">
+    
+                                <option class="under18 ">
+                                Minorenne
+                                </option>
         
-                </select>
+                                <option class="over18 ">
+                                Maggiorenne
+                                </option>
         
-                <div class="mt-4 d-flex justify-content-center">
+                                <option class="over65 ">
+                                Over65
+                                </option>
+                
+                            </select>
+                            <!-- /.select -->
+
+                           
+                        </div>
+                        <!-- /.user_age -->
+                        
+                    </div>
+                    <!-- /.col -->
+
+
+
+                </div>
+                
+        
+                <div class="actions mt-4 d-flex justify-content-center">
         
                     <button id="generate" type="button" class="btn btn-primary mx-4">Genera</button>
+                    <!-- /#generate -->
         
-                    <button id="annulla" type="button" class="btn btn-primary">Annulla</button>
+                    <button id="cancel" type="button" class="btn btn-primary">Annulla</button>
+                    <!-- /#cancel -->
         
                 </div>
+                <!-- ./actions -->
+
     
             </form>
+            <!-- /.form -->
             
         </div>
+        <!-- /.container -->
 
 
         
     </section>
+    <!-- ./top -->
 
     <section class="bottom">
 
-        <h1>IL TUO BIGLIETTO</h1>
+        <h1 class="text-center text-white py-3">IL TUO BIGLIETTO</h1>
 
-        <div class="container">
+        <div class="container py-4 my-4">
 
 
-            <h2>DETTAGLIO PASSEGGERI</h2>
+            <h2 class="pt-3">DETTAGLIO PASSEGGERI</h2>
 
-            <div class="row">
+            <div class="row px-3">
 
-                <div class="col">
+                <div class="col ticket_name">
                     <h3>NOME <br> PASSEGGERO</h3>
                     <h4 id="nome_passeggero"></h4>
-
                 </div>
+                <!-- /.col -->
 
 
                 <div class="col">
                     <h3>Offerta</h3>
-                    <span id="offerta"></span>
-
-
-
+                    <span id="offerta" class="pe-5"></span>
                 </div>
+                <!-- /.col -->
 
                 <div class="col">
                     <h3>Carrozza</h3>
-                    <span id="carrozza"></span>
+                    <span id="carrozza" class="pe-5"></span>
 
                 </div>
+                <!-- /.col -->
 
                 <div class="col">
-                    <h3>Codice CP</h3>
-                    <span id="codice"></span>
+                    <h3>Codice <br> CP</h3>
+                    <span id="codice" class="pe-5"></span>
 
                 </div>
+                <!-- /.col -->
 
                 <div class="col">
-                   <h3> Costo biglietto </h3>
-                   <span id="prezzo"></span>
+                   <h3> Costo <br> biglietto </h3>
+                   <span id="prezzo" class="pe-5"></span>
 
                 </div>
+                <!-- /.col -->
 
                
             </div>
+            <!-- /.row -->
 
 
         </div>
+        <!-- /.container -->
 
 
     </section>
+    <!-- /.bottom -->
 
     
-
-  
-
-   
-
-
     <script src="./assets/js/main.js"></script>
     
 </body>
