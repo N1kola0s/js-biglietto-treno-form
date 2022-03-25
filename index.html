@@ -10,17 +10,28 @@
 </head>
 <body>
 
-    <h1>Calcola il prezzo del tuo biglietto</h1>
+    <form>
+        <span class="mb-3">
+          <label for="nome_cognome" class="form-label">Nome Cognome</label>
+          <input type="text" class="full_name" id="exampleInputName" aria-describedby="emailHelp">
+        </span>
 
-    <div class="nome_cognome"></div>
+        <span class="mb-3">
+            <label for="Km_da_percorrere" class="form-label">Km da percorrere</label>
+            <input type="text" class="way_in_km" id="exampleInputName" aria-describedby="emailHelp">
+        </span>
 
-    <div class="km_da_percorrere"></div>
+        <span class="mb-3">
 
-    <div class="fascia_età"></div>
+            <label for="fascia_eta" class="form-label">Fascia di età</label>
 
-    <button>Genera</button>
+            <input type="text" class="age_range" id="exampleInputage" aria-describedby="emailHelp">
+        </span>
 
-    <div id="costo_biglietto"></div>
+
+        <button id="genera" type="button" class="btn btn-primary">Genera</button>
+    </form>
+
 
     <script src="./assets/js/main.js"></script>
     

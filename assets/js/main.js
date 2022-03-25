@@ -1,4 +1,31 @@
-//chiedere all'utente il nome completo
+const btn = document.getElementById("genera");
+btn.addEventListener("click", function() {
+console.log("click");
+
+
+
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* //chiedere all'utente il nome completo
 
 const full_name= prompt("Quale è il tuo nome? es.[Nome Cognome]");
 console.log(full_name);
@@ -40,35 +67,35 @@ let price_over65;
 if (age < 18){
     /* il prezzo del biglietto con lo sconto per gli under18 */
 
-    discount_under18 = full_price * 0.20;
+   /*  discount_under18 = full_price * 0.20;
     price_under18 = full_price - discount_under18;
     price_fixed = price_under18.toFixed(2);
     
     console.log(`il prezzo del tuo biglietto è ${price_fixed} €`);
 
-} 
+}  */
 
 
-else if (age > 65) {
+/* else if (age > 65) { */
     /* il prezzo del biglietto con lo sconto per gli over65 */
-    discount_over65 = full_price * 0.40;
+/*     discount_over65 = full_price * 0.40;
     price_over65 = full_price - discount_over65;
     price_fixed = price_over65.toFixed(2);
 
     console.log(`Il prezzo del tuo biglietto è ${price_fixed} €`);
+ */
+/* } */
 
-}
-
-else {
+/* else { */
     /* il prezzo del biglietto intero */
-    price_fixed = full_price.toFixed(2);
+  /*   price_fixed = full_price.toFixed(2);
     console.log(` Il prezzo del tuo biglietto è ${price_fixed} €`);
 
 }
+ */
 
-
-document.getElementById("costo_biglietto").innerHTML = `${price_fixed} €`
-
+/* document.getElementById("costo_biglietto").innerHTML = `${price_fixed} €`
+ */ 
 
 
 
