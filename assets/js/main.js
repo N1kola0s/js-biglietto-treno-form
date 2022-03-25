@@ -3,6 +3,11 @@ btn.addEventListener("click", function() {
 console.log("click");
 
 
+const full_name = document.querySelector("full_name");
+const way = document.querySelector ("way");
+const age= document.querySelector ("age_range");
+
+
 
 });
 
