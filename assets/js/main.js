@@ -100,7 +100,24 @@ document.getElementById("codice").innerHTML = code;
 
 document.getElementById("prezzo").innerHTML = price_fixed + " €";
 
-
 });
 
+// reset dati della pagina 
 
+const reset = document.getElementById("cancel");
+
+reset.addEventListener("click", function() {
+console.log("cancel click");
+/* location.reload() */
+
+//reset form input
+document.getElementById("myform").reset();
+
+// reset contenuto stampa biglietto
+document.getElementById("nome_passeggero").innerHTML = "";
+document.getElementById("offerta").innerHTML = "";
+document.getElementById("carrozza").innerHTML = "";
+document.getElementById("codice").innerHTML = "";
+document.getElementById("prezzo").innerHTML = "";
+
+});
